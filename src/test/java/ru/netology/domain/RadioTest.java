@@ -5,21 +5,21 @@ import static org.junit.jupiter.api.Assertions.*;
 class RadioTest {
 
     @Test
-        // создаем тест, который проверяет повышение громкости на 1 значение
-    void shouldIncreaseVolume() {
-        Radio radio = new Radio();
-        radio.setCurrentVolume(3);
-        radio.increaseVolume();
-        assertEquals(4, radio.getCurrentVolume());
-    }
-
-    @Test
         // создаем тест, который проверяет понижение громкости на 1 значение
     void shouldDecreaseVolume() {
         Radio radio = new Radio();
         radio.setCurrentVolume(8);
         radio.decreaseVolume();
         assertEquals(7, radio.getCurrentVolume());
+    }
+
+    @Test
+        // создаем тест, который проверяет повышение громкости на 1 значение
+    void shouldIncreaseVolume() {
+        Radio radio = new Radio();
+        radio.setCurrentVolume(3);
+        radio.increaseVolume();
+        assertEquals(4, radio.getCurrentVolume());
     }
 
     @Test
